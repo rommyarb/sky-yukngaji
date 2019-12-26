@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sky/main_tabs.dart';
 
 import 'warna.dart';
 
@@ -153,7 +154,10 @@ class _LoginState extends State<Login> {
                           ),
                         ),
                         onPressed: () {
-                          // ...
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => MainTabs()));
                         },
                       ),
                     ),
