@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:sky/login.dart';
 import 'package:sky/warna.dart';
+import 'warna.dart';
 
 class Intro extends StatelessWidget {
   const Intro({Key key}) : super(key: key);
@@ -31,7 +33,7 @@ class Intro extends StatelessWidget {
                           child: RaisedButton(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(45)),
-                            color: Colors.yellow,
+                            color: warnaKuning,
                             child: Padding(
                               padding:
                                   const EdgeInsets.symmetric(horizontal: 14),
@@ -52,7 +54,12 @@ class Intro extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Login()));
+                            },
                           ),
                         ),
                       ),
