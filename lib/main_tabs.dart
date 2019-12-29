@@ -37,14 +37,14 @@ class _MainTabsState extends State<MainTabs> {
       onTap: _onTabTapped,
       items: [
         BottomNavigationBarItem(
-            icon: Icon(Icons.school), title: Text("school")),
-        BottomNavigationBarItem(
-            icon: Icon(Icons.notifications), title: Text("notifications")),
+            icon: Icon(Icons.home), title: Text("school")),
         BottomNavigationBarItem(
             icon: Icon(Icons.person), title: Text("person")),
         BottomNavigationBarItem(
-            icon: Icon(Icons.settings), title: Text("settings")),
-        BottomNavigationBarItem(icon: Icon(Icons.menu), title: Text("menu")),
+            icon: Icon(Icons.shopping_cart), title: Text("settings")),
+        BottomNavigationBarItem(
+            icon: Icon(Icons.notifications), title: Text("notifications")),
+        BottomNavigationBarItem(icon: Icon(Icons.settings), title: Text("menu")),
       ],
       type: BottomNavigationBarType.fixed,
       currentIndex: _currentIndex,
@@ -52,7 +52,7 @@ class _MainTabsState extends State<MainTabs> {
       showUnselectedLabels: false,
       selectedItemColor: warnaUtama,
       unselectedItemColor: Colors.grey[400],
-      iconSize: 35,
+      iconSize: 32,
       elevation: 3,
     );
   }
