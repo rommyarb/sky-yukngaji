@@ -262,4 +262,15 @@ class _LoginState extends State<Login> {
       ),
     );
   }
+
+  // PARSE INIT
+  // Future<void> initParse() async {
+  //   log("initializing parse...");
+  //   await Parse().initialize(applicationId, parseUrl);
+  //   var game = await ParseObject("GameScore").getAll();
+  //   game.results.forEach((game) {
+  //     print(game.toString());
+  //   });
+  // }
+
 }
